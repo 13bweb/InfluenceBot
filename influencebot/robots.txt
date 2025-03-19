@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Allow: /sitemap.xml
+
+# Protect sensitive directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /includes/
+
+# Allow crawling of important pages
+Allow: /index
+Allow: /mentions-legales
+Allow: /services
+Allow: /contact
+
+# Optimize crawl rate
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://influencebot.fr/sitemap.xml
+Host: influencebot.fr

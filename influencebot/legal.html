@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales et Confidentialité - Influenceur Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-secondary: #FFD700;
+            --white-primary: #FFFFFF;
+            --white-secondary: #F5F5F5;
+            --dark-background: #121212;
+            --text-light: #E0E0E0;
+            --text-dark: #333333;
+            --gradient-gold: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary));
+        }
+
+        .legal-page {
+            padding: 6rem 0 4rem;
+            background: var(--white-secondary);
+            min-height: 100vh;
+        }
+
+        .legal-section {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            background: var(--white-primary);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            padding: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legal-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: var(--gradient-gold);
+        }
+
+        .legal-section h1 {
+            color: var(--text-dark);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            position: relative;
+        }
+
+        .legal-section h1::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: var(--gold-primary);
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+
+        .legal-section article {
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            background: var(--white-secondary);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .legal-section article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .legal-section h2 {
+            color: var(--text-dark);
+            border-bottom: 2px solid var(--gold-primary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .legal-section h3 {
+            color: var(--text-dark);
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        .legal-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .legal-section ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-section ul li::before {
+            content: '•';
+            color: var(--gold-primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .rgpd-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-gold);
+            color: var(--white-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            margin: 2rem auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: var(--gradient-gold);
+            color: var(--white-primary);
+            border-radius: 100px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .legal-navigation {
+            position: sticky;
+            top: 0;
+            background: var(--white-primary);
+            padding: 1rem;
+            border-bottom: 1px solid var(--white-secondary);
+            z-index: 1;
+        }
+
+        .legal-navigation-container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .legal-nav-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .legal-nav-link:hover {
+            color: var(--gold-primary);
+        }
+
+        @media (max-width: 768px) {
+            .legal-section {
+                width: 95%;
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html#top">
+                    <img src="logo.png" alt="Influenceur Bot Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Accueil</a></li>
+                <li><a href="index.html#about">À Propos</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="legal-page">
+        <nav class="legal-navigation">
+            <div class="legal-navigation-container">
+                <a href="#informations-legales" class="legal-nav-link">Informations Légales</a>
+                <a href="#politique-confidentialite" class="legal-nav-link">Politique de Confidentialité</a>
+                <a href="#conditions-generales" class="legal-nav-link">Conditions Générales</a>
+                <a href="#contact-dpo" class="legal-nav-link">Contact DPO</a>
+            </div>
+        </nav>
+
+        <section class="legal-section">
+            <h1 id="mentions-legales">Mentions Légales et Confidentialité</h1>
+            
+            <div class="rgpd-badge">
+                <i class="fas fa-shield-alt"></i> RGPD Compliant
+            </div>
+            
+            <article id="informations-legales">
+                <h2>Informations Légales</h2>
+                <p><strong>Raison Sociale :</strong> Influenceur Bot</p>
+                <p><strong>Numéro SIREN :</strong> 800 083 602</p>
+                <p><strong>Numéro SIRET (siège) :</strong> 800 083 602 00048</p>
+                <p><strong>Adresse :</strong> 4 rue des Carreaux, 95110 Sannois, France</p>
+            </article>
+
+            <article id="politique-confidentialite">
+                <h2>Politique de Confidentialité</h2>
+                
+                <h3>Collecte des Données</h3>
+                <p>Nous collectons uniquement les informations strictement nécessaires à notre service de newsletter :</p>
+                <ul>
+                    <li>Adresse email</li>
+                    <li>Consentement explicite</li>
+                </ul>
+                
+                <h3>Finalités du Traitement</h3>
+                <ul>
+                    <li>Envoi de notre newsletter</li>
+                    <li>Personnalisation de l'expérience utilisateur</li>
+                    <li>Amélioration continue de nos services</li>
+                </ul>
+                
+                <h3>Vos Droits</h3>
+                <ul>
+                    <li>Droit d'accès</li>
+                    <li>Droit de rectification</li>
+                    <li>Droit à la suppression</li>
+                    <li>Droit à la limitation du traitement</li>
+                    <li>Droit à la portabilité</li>
+                </ul>
+            </article>
+
+            <article id="conditions-generales">
+                <h2>Conditions Générales</h2>
+                
+                <h3>Engagement</h3>
+                <p>En vous inscrivant à notre newsletter, vous bénéficiez des garanties suivantes :</p>
+                <ul>
+                    <li>Inscription 100% volontaire</li>
+                    <li>Désabonnement possible à tout moment</li>
+                    <li>Aucune revente de données personnelles</li>
+                    <li>Politique de confidentialité transparente</li>
+                </ul>
+                
+                <h3>Sécurité des Données</h3>
+                <p>Nous mettons en œuvre des mesures techniques et organisationnelles pour protéger vos données personnelles :</p>
+                <ul>
+                    <li>Chiffrement des données</li>
+                    <li>Accès restreint et sécurisé</li>
+                    <li>Mises à jour régulières de nos systèmes</li>
+                </ul>
+            </article>
+
+            <article id="contact-dpo">
+                <h2>Pour toute question ou exercice de vos droits :</h2>
+                <p><strong>Délégué à la Protection des Données (DPO)</strong></p>
+                <p><strong>Email :</strong> contact@influencebot.fr</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nos Influenceur·euse·s</h3>
+                <ul>
+                    <li>Campagnes IA</li>
+                    <li>Analytics IA</li>
+                    <li>Stratégie Influence</li>
+                    <li>Gestion de Contenu</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="#politique-confidentialite">Politique de Confidentialité</a></li>
+                    <li><a href="#conditions-generales">Conditions Générales</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Retour</h3>
+                <a href="index.html" class="back-home-btn">
+                    <i class="fas fa-home"></i> Retour à l'Accueil
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Influenceur Bot. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
